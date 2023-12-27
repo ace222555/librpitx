@@ -59,7 +59,7 @@ void SimpleTest(uint64_t Freq)
 	int Deviation = 0;
 	clk.SetFrequency(000);
 
-	clk.enableclk(4);
+	clk.enableclk(17);//clk.enableclk(4);
 	usleep(100);
 	//clk.SetClkDivFrac(100,0); // If mash!=0 update doesnt seem to work
 	int count = 0;
@@ -107,7 +107,7 @@ void SimpleTest(uint64_t Freq)
 		clk.SetFrequency(0);
 		usleep(1000);
 	}*/
-	clk.disableclk(4);
+	clk.disableclk(17);//clk.disableclk(4);
 }
 
 void SimpleTestDMA(uint64_t Freq)
