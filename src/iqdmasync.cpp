@@ -65,7 +65,7 @@ iqdmasync::iqdmasync(uint64_t TuneFrequency,uint32_t SR,int Channel,uint32_t Fif
 iqdmasync::~iqdmasync()
 {
 	clkgpio::gengpio.gpioreg[GPFSEL0]=Originfsel;
-	clkgpio::disableclk(4);	
+	clkgpio::disableclk(17);//clkgpio::disableclk(4);	
 }
 
 void iqdmasync::SetPhase(bool inversed)
