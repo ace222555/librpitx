@@ -724,11 +724,11 @@ void info(uint64_t Freq)
 	clk.print_clock_tree();
 	/* // THis fractional works on pi4
 	clk.SetPllNumber(clk_plld, 2);
-	clk.enableclk(4);
+	clk.enableclk(17);//clk.enableclk(4);
 	*/
 	clk.SetPllNumber(clk_pllc, 2);
 	clk.SetAdvancedPllMode(true);
-	clk.enableclk(4);
+	clk.enableclk(17);//clk.enableclk(4);
 	//clk.SetAdvancedPllMode(true);
 	//clk.SetPLLMasterLoop(0,4,0);
 	//clk.Setppm(+7.7);
@@ -745,7 +745,7 @@ void info(uint64_t Freq)
 		usleep(10000);
 	}
 	sleep(10);
-	clk.disableclk(4);
+	clk.disableclk(17);//clk.disableclk(4);
 
 }
 
